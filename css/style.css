@@ -715,20 +715,24 @@ a:hover {
     background-color: #0078ff;
 }
 
-.btns {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.btns>button:last-child {
+    color: #0078ff;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
 }
 
-.btns>button:hover {
-    color: #0062d3;
-    background-color: white;
-    border: 1px solid #0062d3;
+.btns>button:last-child:hover {
+    width: auto;
+    background-color: #0078ff;
+    color: white;
+    border: 0px;
 }
 
-.btns>button {
-    width: 30%;
+.btns>button:first-child {
+    border: 0px;
+    background-color: transparent;
+    color: white;
 }
 
 
@@ -740,7 +744,7 @@ a:hover {
     width: 100%;
     height: 15px;
     border-radius: 1px;
-    margin: 20px 10px;
+    margin: 15px 10px;
     overflow: hidden;
     position: relative;
     background-color: #b4d5fade;
@@ -1319,4 +1323,20 @@ footer .credits a {
     .back-to-top {
         bottom: 15px;
     }
+}
+
+.lead{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 200%;
+    margin-top: 10%;
+}
+
+.list-unstyled{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.list-unstyled>li{
+    margin-left: 150%;
 }
